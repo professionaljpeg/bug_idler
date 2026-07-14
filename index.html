@@ -11,48 +11,64 @@
         <link rel="stylesheet" href="public/style.css">
     </head>
     <body>
-        <header class="page-header">
-            <h1>Bug Idler</h1>
-            <div id="leaf-nav-box">
-                <h3>Leaf</h3>
+        <div id="game-wrapper">
+            <div id="header-menu">
+                <div id="title-box">
+                    <h1>Bug Idler</h1>
+                </div>
+                <div id="leaf-nav-box" class="menu-box">
+                    <h3>Leaf</h3>
+                </div>
+                <div id="htp-nav-box" class="menu-box">
+                    <h3>How to Play</h3>
+                </div>
+                <div id="stats-nav-box" class="menu-box">
+                    <h3>Stats</h3>
+                </div>
+                <div id="settings-nav-box" class="menu-box">
+                    <h3>Setttings</h3>
+                </div>
             </div>
-            <div id="upgrades-nav-box">
-                <h3>Upgrades</h3>
+            <div id="game">
+                <div id="leaf-wrapper" class="panel">
+                    <div id="leaf-counter-box" class="leaf-panel-box">
+                        <h3><div id="count">0</div> leaves</h3>
+                    </div>
+
+                    <div id="leaf-box">
+                        <img
+                            src="assets/Bug_Idler_Dew_Leaf.png"
+                            alt="A big leaf"
+                        >
+                    </div>
+                </div>
+
+               <div id="upgrades-wrapper" class="panel">
+                    <div id="upgrades-title-box" class="panel-title">
+                        <h3>Upgrades</h3>
+                    </div>
+
+                    <div id="ant-box" class="bug-box">
+                        
+                    </div>
+
+                    <div id="fly-box" class="bug-box">
+
+                    </div>
+
+                    <div id="bee-box" class="bug-box">
+
+                    </div>
+
+                    <div id="butterfly-box" class="bug-box">
+
+                    </div>
+
+                    <div id="mantis-box" class="bug-box">
+
+                    </div>
+               </div>
             </div>
-            <div id="htp-nav-box">
-                <h3>How to Play</h3>
-            </div>
-            <div id="stats-nav-box">
-                <h3>Stats</h3>
-            </div>
-            <div id="settings-nav-box">
-                <h3>Setttings</h3>
-            </div>
-        </header>
-
-        <section class="leaf-clicker">
-            <div id="leaf-counter-box">
-                <h3>Leaves Eaten <div id="count">0</div></h3>
-            </div>
-
-            <div id="leaf-box">
-                <img
-                    src="assets/Bug_Idler_Dew_Leaf.png"
-                    alt="A big leaf"
-                >
-            </div>
-        </section>
-
-        <section class="upgrades">
-
-        </section>
-
-        <section class="how-to-play">
-
-        </section>
-
-        <section class="settings">
-
-        </section>
+        </div>
     </body>
 </html>
