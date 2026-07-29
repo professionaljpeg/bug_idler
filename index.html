@@ -12,8 +12,9 @@
     </head>
     
     <body>
-        <div id="game-wrapper">
-            <div id="header-menu">
+        <div id="wrapper">
+            <div id="menuBar">
+
                 <div id="title-box">
                     <h1>Bug Idler</h1>
                 </div>
@@ -28,47 +29,94 @@
                 </div>
                 <div id="settings-nav-box" class="menu-box">
                     <h3>Setttings</h3>
-                </div>
             </div>
+
             <div id="game">
-                <div id="leaf-wrapper" class="panel">
-                    <div id="leaf-counter-box" class="leaf-panel-box">
-                        <h3><div id="count">0</div> leaves</h3>
+                <canvas id="backgroundCanvas" style="background: transparent;"></canvas>
+                    <div id="leftPanel" class="inset">
+                        <canvas id="backgroundLeftCanvas" style="z-index:5;" width="461" height="262"></canvas>
+                        <div id="shop-title-box" class="panel-title">
+                            <h3 class="title">Shop</h3>
+                        </div>
+
+                        <div id="ant-shop" class="shop-box">
+                            
+                        </div>
+
+                        <div id="fly-shop" class="shop-box">
+
+                        </div>
+
+                        <div id="bee-shop" class="shop-box">
+
+                        </div>
+
+                        <div id="butterfly-shop" class="shop-box">
+
+                        </div>
+
+                        <div id="mantis-shop" class="shop-box">
+
+                        </div>
                     </div>
 
-                    <div id="leaf-box">
-                        <img
-                            src="assets/Bug_Idler_Dew_Leaf.png"
-                            alt="A big leaf"
-                        >
+                    <div id="centerPanel" class="inset">
+                        <div id="menuBar">
+                            <div id="title-box">
+                                    <h1>Bug Idler</h1>
+                            </div>
+                            <div id="leaf-nav-box" class="menu-box">
+                                <h3>Leaf</h3>
+                            </div>
+                            <div id="htp-nav-box" class="menu-box">
+                                <h3>How to Play</h3>
+                            </div>
+                            <div id="stats-nav-box" class="menu-box">
+                                <h3>Stats</h3>
+                            </div>
+                            <div id="settings-nav-box" class="menu-box">
+                                <h3>Setttings</h3>
+                            </div>
+                        </div>
+                        
+                        <div id="leaf-counter-box" class="leaf-panel-box">
+                            <h3 class="title"><div id="counter">0</div> leaves</h3>
+                        </div>
+
+                        <div id="leaf-box">
+                            <img
+                                src="assets/Bug_Idler_Dew_Leaf.png"
+                                alt="A big leaf"
+                            >
+                        </div>
+                    </div>
+                
+                    <div id="rightPanel" class="inset">
+                        <div id="upgrades-title-box" class="panel-title">
+                            <h3 class="title">Bugs</h3>
+                        </div>
+
+                        <div id="ant-box" class="bug-box">
+
+                        </div>
+
+                        <div id="fly-box" class="bug-box">
+
+                        </div>
+
+                        <div id="bee-box" class="bug-box">
+
+                        </div>
+
+                        <div id="butterfly-box" class="bug-box">
+
+                        </div>
+
+                        <div id="mantis-box" class="bug-box">
+
+                        </div>
                     </div>
                 </div>
-
-               <div id="upgrades-wrapper" class="panel">
-                    <div id="upgrades-title-box" class="panel-title">
-                        <h3>Upgrades</h3>
-                    </div>
-
-                    <div id="ant-box" class="bug-box">
-
-                    </div>
-
-                    <div id="fly-box" class="bug-box">
-
-                    </div>
-
-                    <div id="bee-box" class="bug-box">
-
-                    </div>
-
-                    <div id="butterfly-box" class="bug-box">
-
-                    </div>
-
-                    <div id="mantis-box" class="bug-box">
-
-                    </div>
-               </div>
             </div>
         </div>
     </body>

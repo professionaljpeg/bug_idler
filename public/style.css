@@ -1,0 +1,131 @@
+div,span,h1,h2,h3,h4,h5,h6,p{margin:0;padding:0;}
+
+html,body
+{
+	width:100%;
+	height:100%;
+}
+
+body
+{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: -moz-none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	touch-action: manipulation;
+	
+	color:#fff;
+	background:#000 url(img/darkNoise.jpg);
+	font-family:Tahoma,Arial,sans-serif;
+	font-size:13px;
+	
+	overflow:hidden;
+}
+
+.selectable
+{
+	-webkit-touch-callout: text;
+	-webkit-user-select: text;
+	-khtml-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	user-select: text;
+}
+
+#wrapper
+{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	min-width:1280px;
+	transform-origin:0 0;
+}
+
+small
+{
+	font-size:80%;
+}
+
+a,a:visited
+{
+	text-decoration:underline;
+	cursor:pointer;
+	color:#ccc;
+}
+a:hover
+{
+	text-shadow:0px 0px 3px #fff;
+	color:#fff;
+}
+a:active
+{
+	opacity:0.8;
+	background:transparent;
+}
+
+.inset
+{
+	box-shadow:0px 0px 12px #000 inset;
+}
+
+.titleFont,.title,.section,.lockedTitle,.smallFancyButton
+{
+	font-family: 'Merriweather', Georgia,serif;
+}
+.title,.section,.lockedTitle
+{
+	font-size:28px;
+	text-shadow:0px 1px 4px #000;
+	color:#fff;
+}
+
+#topBar
+{
+	visibility:hidden;
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:32px;
+	color:#9fe66f;
+}
+
+#leftPanel {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 30%;
+  bottom: 0px;
+  min-width: 100px;
+  overflow: hidden;
+}
+
+#centerPanel {
+  position: absolute;
+  left: 30%;
+  padding-left: 16px;
+  margin-right: 15px;
+  top: 0px;
+  right: 318px;
+  bottom: 0px;
+  min-width: 100px;
+  overflow: hidden;
+}
+
+#rightPanel {
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: url(img/panelBG.png);
+  background: rgba(0,0,0,0.5);
+}
