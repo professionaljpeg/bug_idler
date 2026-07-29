@@ -13,29 +13,11 @@
     
     <body>
         <div id="wrapper">
-            <div id="menuBar">
-
-                <div id="title-box">
-                    <h1>Bug Idler</h1>
-                </div>
-                <div id="leaf-nav-box" class="menu-box">
-                    <h3>Leaf</h3>
-                </div>
-                <div id="htp-nav-box" class="menu-box">
-                    <h3>How to Play</h3>
-                </div>
-                <div id="stats-nav-box" class="menu-box">
-                    <h3>Stats</h3>
-                </div>
-                <div id="settings-nav-box" class="menu-box">
-                    <h3>Setttings</h3>
-            </div>
-
             <div id="game">
                 <canvas id="backgroundCanvas" style="background: transparent;"></canvas>
-                    <div id="leftPanel" class="inset">
+                    <div id="sectionLeft" class="inset">
                         <canvas id="backgroundLeftCanvas" style="z-index:5;" width="461" height="262"></canvas>
-                        <div id="shop-title-box" class="panel-title">
+                        <div id="shop-title-box" class="insetTitle">
                             <h3 class="title">Shop</h3>
                         </div>
 
@@ -60,21 +42,21 @@
                         </div>
                     </div>
 
-                    <div id="centerPanel" class="inset">
+                    <div id="sectionMiddle" class="inset">
                         <div id="menuBar">
-                            <div id="title-box">
-                                    <h1>Bug Idler</h1>
+                            <div id="title-box" style="align-self: center;">
+                                <h1>Bug Idler</h1>
                             </div>
-                            <div id="leaf-nav-box" class="menu-box">
+                            <div id="leafButton" class="panelButton">
                                 <h3>Leaf</h3>
                             </div>
-                            <div id="htp-nav-box" class="menu-box">
+                            <div id="htpButton" class="panelButton">
                                 <h3>How to Play</h3>
                             </div>
-                            <div id="stats-nav-box" class="menu-box">
+                            <div id="stats-nav-box" class="panelButton">
                                 <h3>Stats</h3>
                             </div>
-                            <div id="settings-nav-box" class="menu-box">
+                            <div id="settings-nav-box" class="panelButton">
                                 <h3>Setttings</h3>
                             </div>
                         </div>
@@ -91,7 +73,7 @@
                         </div>
                     </div>
                 
-                    <div id="rightPanel" class="inset">
+                    <div id="sectionRight" class="inset">
                         <div id="upgrades-title-box" class="panel-title">
                             <h3 class="title">Bugs</h3>
                         </div>

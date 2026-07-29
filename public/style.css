@@ -86,46 +86,99 @@ a:active
 	color:#fff;
 }
 
-#topBar
+#game
 {
-	visibility:hidden;
 	position:absolute;
 	left:0px;
 	top:0px;
-	width:100%;
-	height:32px;
-	color:#9fe66f;
+	right:0px;
+	bottom:0px;
+	overflow:hidden;
+}
+.onWeb #game{top:32px;}
+.offWeb #game{top:0px;}
+
+#sectionLeft
+{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:30%;
+	bottom:0px;
+	min-width:100px;
+	/*overflow:hidden;*/
+}
+/*#sectionLeftExtra{position:absolute;left:0px;top:0px;}*/
+#sectionMiddle
+{
+	position:absolute;
+	left:30%;
+	padding-left:16px;
+	margin-right:15px;
+	top:0px;
+	right:318px;
+	bottom:0px;
+	min-width:100px;
+	overflow:hidden;
+}
+#centerArea
+{
+	overflow-x:hidden;
+	overflow-y:scroll;
+	position:absolute;
+	top:112px;
+	left:16px;
+	bottom:0px;
+	right:0px;
+}
+#game.onMenu #centerArea
+{
+	background:#000 url(img/darkNoise.jpg);
+	background-image:url(img/shadedBorders.png),url(img/darkNoise.jpg);
+	background-size:100% 100%,auto;
+	background-color:#000;
+}
+#sectionRight
+{
+	height:100%;
+	position:absolute;
+	top:0px;
+	right:0px;
+	overflow-x:hidden;
+	overflow-y:scroll;
+	/*background:url(img/panelBG.png);*/
+	background:rgba(0,0,0,0.5);
 }
 
-#leftPanel {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 30%;
-  bottom: 0px;
-  min-width: 100px;
+#sectionLeft .blackGradient
+{
+	background:url(img/blackGradient.png) repeat-x bottom;
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:300px;
+	height:640px;
+}
+#sectionLeft .blackFiller
+{
+	background:#000;
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:940px;
+	bottom:0px;
+}
+
+#menuBar {
+  padding: 16px;
+    padding-bottom: 16px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 32px;
+  font-size: 16px;
+  height: 64px;
+  background: url(img/shadedBorders.png);
+    background-size: auto;
+  background-size: 100% 96px;
   overflow: hidden;
-}
-
-#centerPanel {
-  position: absolute;
-  left: 30%;
-  padding-left: 16px;
-  margin-right: 15px;
-  top: 0px;
-  right: 318px;
-  bottom: 0px;
-  min-width: 100px;
-  overflow: hidden;
-}
-
-#rightPanel {
-  height: 100%;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  background: url(img/panelBG.png);
-  background: rgba(0,0,0,0.5);
 }
