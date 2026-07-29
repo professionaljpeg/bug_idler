@@ -14,9 +14,8 @@
     <body>
         <div id="wrapper">
             <div id="game">
-                <canvas id="backgroundCanvas" style="background: transparent;"></canvas>
                     <div id="sectionLeft" class="inset">
-                        <canvas id="backgroundLeftCanvas" style="z-index:5;" width="461" height="262"></canvas>
+
                         <div id="shop-title-box" class="insetTitle">
                             <h3 class="title">Shop</h3>
                         </div>
@@ -44,32 +43,37 @@
 
                     <div id="sectionMiddle" class="inset">
                         <div id="menuBar">
-                            <div id="title-box" style="align-self: center;">
-                                <h1>Bug Idler</h1>
+                            <div id="titleBox">
+                                <h1 id="Title">Bug Idler</h1>
                             </div>
                             <div id="leafButton" class="panelButton">
                                 <h3>Leaf</h3>
                             </div>
-                            <div id="htpButton" class="panelButton">
-                                <h3>How to Play</h3>
+                            <div id="infoButton" class="panelButton">
+                                <h3>Info</h3>
                             </div>
-                            <div id="stats-nav-box" class="panelButton">
-                                <h3>Stats</h3>
+                            <div id="saveButton" class="panelButton">
+                                <h3>Save</h3>
                             </div>
-                            <div id="settings-nav-box" class="panelButton">
-                                <h3>Setttings</h3>
+                            <div id="settingsButton" class="panelButton">
+                                <h3>Settings</h3>
                             </div>
                         </div>
                         
-                        <div id="leaf-counter-box" class="leaf-panel-box">
-                            <h3 class="title"><div id="counter">0</div> leaves</h3>
-                        </div>
-
-                        <div id="leaf-box">
-                            <img
-                                src="assets/Bug_Idler_Dew_Leaf.png"
-                                alt="A big leaf"
-                            >
+                        <div id="centerArea">
+                            <div id="counterBox">
+                                <h3 id="counterTitle"><div id="counter">0</div> leaves</h3>
+                                <p><div id="leavesPerSec">0 leaves/sec</div></p>
+                            </div>
+                            <div id="leafBox">
+                                <img
+                                    id="leaf"
+                                    src="assets/Bug_Idler_Leaf.png"
+                                    alt="A big leaf"
+                                    height="306"
+                                    width="281"
+                                >
+                            </div>
                         </div>
                     </div>
                 
