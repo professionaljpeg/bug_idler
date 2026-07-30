@@ -75,17 +75,33 @@ a:active
 	flex: 1;
 	box-sizing: border-box;
 	border: 1px solid #000;
+	max-width: 900px;
+	min-width: 100px;
+	max-height: 1500px;
+	min-height: 500px;
+}
+
+.insetTitle {
+	text-align:center;
+	position:relative;
+	padding-top: 10px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #000;
+	
 }
 
 .titleFont,.title,.section,.lockedTitle,.smallFancyButton
 {
 	font-family: 'Merriweather', Georgia,serif;
-}
-.title,.section,.lockedTitle
-{
 	font-size:28px;
 	text-shadow:0px 1px 4px #000;
 	color:#fff;
+}
+
+#gameTitle
+{
+	text-wrap-mode: nowrap;
+	font-size: 38px;
 }
 
 #game
@@ -135,13 +151,6 @@ a:active
 	right:0px;
 }
 
-#game.onMenu #centerArea
-{
-	background:#000 url(img/darkNoise.jpg);
-	background-image:url(img/shadedBorders.png),url(img/darkNoise.jpg);
-	background-size:100% 100%,auto;
-	background-color:#000;
-}
 #sectionRight
 {
 	position:absolute;
@@ -169,11 +178,11 @@ a:active
 
 #titleBox {
     position: absolute;
+	text-align: center;
 	margin: auto;
-    top: 6px;
+    top: 3px;
     left: 20%;
     right: 20%;
-    bottom: 8px;
     overflow: hidden;
     z-index: 1;
 }
@@ -199,28 +208,34 @@ a:active
 	border-left: 0px;
 }
 
-.panelButton > div:first-child {
+.panelButton > div:first-child 
+{
 	display: inline-block;
 }
 
-#leafButton {
+#leafButton 
+{
 	left: 0%;
 }
 
-#infoButton {
+#infoButton 
+{
 	left: 25%;
 }
 
-#saveButton {
+#saveButton 
+{
 	left: 50%;
 }
 
-#settingsButton {
+#settingsButton 
+{
 	left: 75%;
 	border-right: 0px;
 }
 
-#counterBox {
+#counterBox 
+{
 	box-sizing: border-box;
 	text-align: center;
 	font-size: 26px;
@@ -229,7 +244,8 @@ a:active
 	padding-bottom: 10px;
 }
 
-#leafBox {
+#leafBox 
+{
 	flex: 1;
 	margin: auto;
 	box-sizing: border-box;
@@ -239,7 +255,8 @@ a:active
 	align-items: center;
 }
 
-#leavesPerSec {
+#leavesPerSec 
+{
 	margin-top: 6px;
 	font-size: 16px;
 }
